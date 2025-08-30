@@ -1,45 +1,50 @@
-🛡️ Phishing Detection using Machine Learning
 
-This project detects phishing vs legitimate websites using the Phishing_Legitimate_full.csv dataset.
+# 🛡️ Phishing Detection using Machine Learning
 
-📌 Features
+This project implements a **machine learning-based phishing website detection system** using the `Phishing_Legitimate_full.csv` dataset. It applies feature selection, baseline logistic regression, and an optimized random forest classifier to achieve **high accuracy (>95%)** in distinguishing phishing from legitimate websites.
 
-Data preprocessing & feature selection (mutual information, correlations)
+---
 
-Baseline: Logistic Regression
+## 📌 Features
 
-Improved Model: Random Forest (Accuracy > 95%)
+* Preprocessing and feature selection using correlation analysis & mutual information
+* Baseline classification with Logistic Regression
+* Optimized detection using Random Forest (Accuracy > 95%)
+* Evaluation with confusion matrix, classification report, and feature importance
+* Export of trained model and selected features for reproducibility
 
-Outputs include confusion matrix, classification metrics, saved model, and selected features
+---
 
-📂 Repository Structure
+## 📂 Repository Structure
 
 Phishing-Detection-ML/
-├── Phishing_Detection_Colab.ipynb # Main notebook
+├── Phishing\_Detection\_Colab.ipynb   — Main Colab notebook
 ├── outputs/
-│ ├── confusion_matrix.png # Confusion Matrix heatmap
-│ ├── classification_report.txt # Precision, Recall, F1-score, Accuracy
-│ ├── rf_phishing_model.pkl # Saved Random Forest model
-│ └── selected_features.txt # Top-N features used
-└── report.pdf # Final 2-page project report
+│   ├── confusion\_matrix.png         — Confusion matrix heatmap
+│   ├── classification\_report.txt    — Precision, Recall, F1-score, Accuracy
+│   ├── rf\_phishing\_model.pkl        — Saved Random Forest model
+│   └── selected\_features.txt        — Ranked feature set used in training
+└── report.pdf                       — Final 2-page project report
 
-🚀 How to Run
+---
 
-Open Phishing_Detection_Colab.ipynb in Google Colab
+## 🚀 How to Run
 
-Upload Phishing_Legitimate_full.csv
+1. Open `Phishing_Detection_Colab.ipynb` in **Google Colab**
+2. Upload `Phishing_Legitimate_full.csv` dataset
+3. Run all cells → Processed outputs will be saved in the `outputs/` folder
 
-Run all cells → Results will be saved in the outputs/ folder
+---
 
-📊 Results
+## 📊 Results
 
-Logistic Regression baseline performed well
+* Logistic Regression provided a reliable baseline
+* Random Forest achieved **98% accuracy** with balanced precision and recall
+* Confusion Matrix, Classification Report, Trained Model, and Feature List are available in the `outputs/` folder
 
-Random Forest achieved Accuracy above 95%
+---
 
-Confusion Matrix, Classification Report, Model, and Selected Features are saved in the outputs/ folder
+## 👩‍💻 Author
 
-👩‍💻 Author
-
-Harshita
-B.Tech IT-2 (CBIT)
+**Harshita**
+B.Tech IT-2, CBIT
